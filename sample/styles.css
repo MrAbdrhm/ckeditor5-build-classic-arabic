@@ -1,0 +1,12 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+.editor-container {
+  margin: 100px auto;
+  width: 1160px;
+  max-width: 100%;
+  overflow: hidden;
+  padding: 1rem;
+}

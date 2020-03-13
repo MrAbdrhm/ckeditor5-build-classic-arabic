@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl"></html>
+<head>
+  <title>CKEditor 5 AR</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="stylesheet" type="text/css" href="styles.css" />
+</head>
+<body>
+  <main>
+    <div class="editor-container">
+      <div class="editor"></div>
+    </div>
+  </main>
+  <script src="../build/ckeditor.js"></script>
+  <script>
+    ClassicEditor.create(document.querySelector(".editor"),{
+      language: "ar",
+    })
+      .then(editor => {
+        window.editor = editor;
+      })
+      .catch(error => {
+        console.error(error);
+      });
+  </script>
+</body>
